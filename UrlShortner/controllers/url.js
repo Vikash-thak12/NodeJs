@@ -12,7 +12,7 @@ async function  handleGenerateNewUrl(req, res) {
         visitHistory: []
     })
 
-    return res.json({ shortID: shortID})
+    return res.json({ ID: shortID})
 }
 
 async function handleGetAnalytics(req, res){
