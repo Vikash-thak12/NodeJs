@@ -7,13 +7,13 @@ const URL = require('./models/url')
 const { connectMongoDB } = require('./connect')
 const PORT = 8000;
 
-connectMongoDB("mongodb://127.0.0.1:27017/url-short").then( () => console.log("MongoDb connected"))
+connectMongoDB("mongodb://127.0.0.1:27017/FinalUrlShortner").then( () => console.log("MongoDb connected"))
 
 
 app.use(express.json())
 
 app.use('/url', urlRouter)
-app.get('/:shorID', async (req, res) => {
+app.get('/:shortID', async (req, res) => {
     const shortID = req.params.shortID;
     const entry = await URL.findOneAndUpdate({
         shortID
