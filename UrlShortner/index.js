@@ -7,6 +7,7 @@ const URL = require('./models/url')
 const { connectMongoDB } = require('./connect')
 const PORT = 8001;
 
+//connecting to the server
 connectMongoDB("mongodb://127.0.0.1:27017/FinalUrlShortner").then( () => console.log("MongoDb connected"))
 
 
