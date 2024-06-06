@@ -17,6 +17,7 @@ async function  handleGenerateNewUrl(req, res) {
     return res.json({ ID: shortID})
 }
 
+// function to know total no of clicks 
 async function handleGetAnalytics(req, res){
     const shortID = req.params.shortID;
     const result = await URL.findOne({ shortID })
