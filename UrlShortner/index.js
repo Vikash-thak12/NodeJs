@@ -10,7 +10,7 @@ const PORT = 8001;
 //connecting to the server
 connectMongoDB("mongodb://127.0.0.1:27017/FinalUrlShortner").then( () => console.log("MongoDb connected"))
 
-
+//Middleware
 app.use(express.json())
 
 app.use('/url', urlRouter)
