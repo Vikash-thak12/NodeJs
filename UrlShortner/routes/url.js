@@ -5,7 +5,7 @@ const { handleGenerateNewUrl, handleGetAnalytics } = require('../controllers/url
 
 
 
-router.post('/', handleGenerateNewUrl)
+router.post('/', handleGenerateNewUrl) //For generating new short url 
 router.get('/analytics/:shortID', handleGetAnalytics)
 
 
